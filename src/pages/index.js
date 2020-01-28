@@ -41,8 +41,8 @@ const IndexPage = () => (
         fontFamily="Norwester"
         fontSize={[4,5,6]}
         m={15}>Zero Hour Movement</Text>
-        <Link href="https://google.com"><Button className="pulse" variant='outline' mr={2} fontFamily="Norwester" backgroundColor='secondary'>Instagram</Button></Link>
-        <Link href="https://google.com"><Button className="pulse" variant='outline' mr={2} fontFamily="Norwester" backgroundColor='secondary'>Twitter</Button></Link>
+        <Link href="https://www.instagram.com/zerohourmvmt/"><Button className="pulse" variant='outline' mr={2} fontFamily="Norwester" backgroundColor='secondary'>Instagram</Button></Link>
+        <Link href="https://twitter.com/zerohourmvmt/"><Button className="pulse" variant='outline' mr={2} fontFamily="Norwester" backgroundColor='secondary'>Twitter</Button></Link>
         <Link href="https://google.com"  sx={{
           ':hover':{
             cursor: 'pointer'

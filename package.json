@@ -1,9 +1,9 @@
 {
   "name": "zerohourmovement",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Zero Hour Movement's official website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Zach Zulanas <https://www.zzulanas.com>",
   "dependencies": {
     "@rebass/preset": "^4.0.5",
     "emotion-theming": "^10.0.27",
@@ -27,7 +27,12 @@
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "zero",
+    "hour",
+    "movement",
+    "climate",
+    "action",
+    "change"
   ],
   "license": "MIT",
   "scripts": {
