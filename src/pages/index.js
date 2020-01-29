@@ -17,7 +17,6 @@ const boxstyle = {
   left: '35%',
   padding: '10vmin',
   position: 'fixed',
-  textAlign: 'center',
   top: '50%',
   transform: 'translate(-50%, -50%)'
 }
@@ -38,7 +37,8 @@ const IndexPage = () => (
         <Text
           fontFamily="Norwester"
           fontSize={6}
-          display="inline"
+          display="block"
+          lineHeight = {1}
           m={15}>Zero Hour Movement</Text>
         <Box><Link href="https://google.com"><Button className="pulse" variant='outline' sx={{
           '&:hover': {
