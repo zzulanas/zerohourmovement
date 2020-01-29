@@ -92,6 +92,7 @@ const IndexPage = () => (
               paddingBottom: (900 / 16) + '%',
               position: 'relative',
               overflow: 'hidden',
+              display: 'none',
               '& > iframe': {
                 position: 'absolute',
                 width: '100%',
