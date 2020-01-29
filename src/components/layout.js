@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
             color='white'
             bg='transparent'
             alignItems='center'>
-            <img src={logo} style={{maxWidth:80}}/>
+            <Link href="thisiszerohour.org"><img src={logo} style={{maxWidth:80, margin:10}}/></Link>
             <Box mx='auto' />
           </Flex>
           <main>{children}</main>
