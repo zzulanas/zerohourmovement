@@ -46,21 +46,24 @@ const IndexPage = () => (
           }
         }}>
           <Box width={2/3}>
-          <Box>
+          <Box sx={{textAlign:'left', '@media screen and (min-width: 600px)':{textAlign:'center'}}}>
             <Text
               fontFamily="Norwester"
               fontSize={6}
               display="block"
               lineHeight={1}
               whiteSpace="wrap"
+              sx={{whiteSpace:'wrap'}}
               m={15}>Zero Hour Movement</Text>
           </Box>
-          <Box><Link href="https://google.com"><Button className="pulse" variant='outline' sx={{
+          <Box sx={{textAlign:'left', '@media screen and (min-width: 600px)':{textAlign:'center'}}}><Link href="https://google.com"><Button className="pulse" variant='outline' sx={{
             '&:hover': {
               backgroundColor: '#FE3E00',
             },
             cursor: 'pointer'
           }} m={2} p={3} fontSize={4} fontFamily="Norwester" backgroundColor='secondary'>Donate</Button></Link>
+          </Box>
+          <Box sx={{textAlign:'left', '@media screen and (min-width: 600px)':{textAlign:'center'}}}>
             <Link href="https://www.instagram.com/zerohourmvmt/"><Button className="pulse" variant='outline' m={2} fontFamily="Norwester" backgroundColor='secondary' sx={{
               '&:hover': {
                 backgroundColor: '#FE3E00',
@@ -79,6 +82,7 @@ const IndexPage = () => (
             sx={{
               width: '100%',
               height: 0,
+              marginTop: 50,
               paddingBottom: (900 / 16) + '%',
               position: 'relative',
               overflow: 'hidden',
@@ -96,7 +100,7 @@ const IndexPage = () => (
                 border: 0
               }
             }}>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ls-axJhZ6WA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a5CyDxpoYJA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </Box>
         </Flex>
       </Card>
