@@ -52,23 +52,24 @@ const IndexPage = () => (
               fontSize={6}
               display="block"
               lineHeight={1}
+              whiteSpace="wrap"
               m={15}>Zero Hour Movement</Text>
           </Box>
           <Box><Link href="https://google.com"><Button className="pulse" variant='outline' sx={{
             '&:hover': {
-              backgroundColor: 'blue',
+              backgroundColor: '#FE3E00',
             },
             cursor: 'pointer'
           }} m={2} p={3} fontSize={4} fontFamily="Norwester" backgroundColor='secondary'>Donate</Button></Link>
             <Link href="https://www.instagram.com/zerohourmvmt/"><Button className="pulse" variant='outline' m={2} fontFamily="Norwester" backgroundColor='secondary' sx={{
               '&:hover': {
-                backgroundColor: 'blue',
+                backgroundColor: '#FE3E00',
               },
               cursor: 'pointer'
             }}>Instagram</Button></Link>
             <Link href="https://twitter.com/zerohourmvmt/"><Button className="pulse" variant='outline' m={2} sx={{
               '&:hover': {
-                backgroundColor: 'blue',
+                backgroundColor: '#FE3E00',
               },
               cursor: 'pointer'
             }} fontFamily="Norwester" backgroundColor='secondary'>Twitter</Button></Link>
@@ -81,22 +82,21 @@ const IndexPage = () => (
               paddingBottom: (900 / 16) + '%',
               position: 'relative',
               overflow: 'hidden',
-              '& > video': {
+              '& > iframe': {
                 position: 'absolute',
                 width: '100%',
-                height: '100%',
+                height: '60%',
+                '@media screen and (max-width:64em)':{
+                  width: '100%',
+                  height: '100%',
+                },
                 top: 0,
                 bottom: 0,
                 left: 0,
                 border: 0
               }
             }}>
-            <video
-              width='560'
-              height='315'
-              src='https://ucc9c9b27e3288c8c3a53005acd5.dl.dropboxusercontent.com/cd/0/inline/AxHpIPqO5dbR0Hji_6z7vA4Wfib4Wx8p0U2HeYYhGTAvBtysPVW0mJe_pHJkWYr3k_Nn0Rh6QRNqsJ8EzkK89f6PM7DEPuFNtZ5VKRswaJFTpMNTPm_QaTj1YWBWJjST8Cw/file#'
-              allowFullScreen
-            />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ls-axJhZ6WA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </Box>
         </Flex>
       </Card>
