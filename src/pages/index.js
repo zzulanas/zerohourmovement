@@ -1,14 +1,16 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Image from "../components/zh-logo"
+import logo from "../images/zh-logo.png"
 import SEO from "../components/seo"
 import {
   Box,
   Card,
   Button,
   Text,
-  Link
+  Link,
+  Flex
 } from 'rebass'
 
 import "../css/bg.css"
@@ -34,12 +36,14 @@ const IndexPage = () => (
       }}
     >
       <Card>
-        <Text
+        <Flex>
+          <Text
           fontFamily="Norwester"
           fontSize={6}
           display="block"
           lineHeight = {1}
           m={15}>Zero Hour Movement</Text>
+          </Flex>
         <Box><Link href="https://google.com"><Button className="pulse" variant='outline' sx={{
           '&:hover': {
             backgroundColor: 'blue',
