@@ -26,9 +26,10 @@ class ContactForm extends React.Component {
   render() {
     return (
       <form style={{ fontFamily: 'Norwester', margin: 15 }} name="newsletter" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="newsletter" />
         <span class={"input input--nao "+ ((this.state.name == "") ? 'input--filled' : '')}>
-          <input class="input__field input__field--nao" type="text" id="input-1" onChange={this.handleChange}/>
+          <input class="input__field input__field--nao" type="text" id="input-1" name="name" onChange={this.handleChange}/>
             <label class="input__label input__label--nao" for="input-1">
               <span class="input__label-content input__label-content--nao "  >Name</span>
             </label>
@@ -37,7 +38,7 @@ class ContactForm extends React.Component {
             </svg>
       </span>
           <span class={"input input--nao "+ ((this.state.name == "") ? 'input--filled' : '')}>
-            <input class="input__field input__field--nao" type="text" id="input-2" onChange={this.handleChange}/>
+            <input class="input__field input__field--nao" type="text" id="input-2" onChange={this.handleChange} name="email"/>
               <label class="input__label input__label--nao" for="input-2">
                 <span class="input__label-content input__label-content--nao">Email</span>
               </label>
