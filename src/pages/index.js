@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Image from "../components/zh-logo"
+import ContactForm from "../components/ContactForm.js";
 import logo from "../images/zh-logo.png"
 import SEO from "../components/seo"
 import {
@@ -59,7 +60,8 @@ const IndexPage = () => (
           <Box sx={{textAlign:'left', '@media screen and (min-width: 600px)':{textAlign:'center'}}}><Link href="https://google.com"><Button className="pulse" variant='outline' sx={{
             '&:hover': {
               backgroundColor: '#FE3E00',
-            },
+            }, 
+            display: 'none',
             cursor: 'pointer'
           }} m={2} p={3} fontSize={4} fontFamily="Norwester" backgroundColor='secondary'>Donate</Button></Link>
           </Box>
@@ -82,6 +84,7 @@ const IndexPage = () => (
               },
               cursor: 'pointer'
             }} fontFamily="Norwester" backgroundColor='secondary'>Facebook</Button></Link>
+            <ContactForm/>
           </Box>
           </Box>
           <Box
