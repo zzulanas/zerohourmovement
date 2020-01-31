@@ -55,7 +55,7 @@ const Layout = ({ children }) => {
           color: 'white',
           textAlign: 'center'
         }}>
-        <p>Website design by <a href="https://zzulanas.com">Zachary Zulanas</a></p>
+        <p style={{fontFamily: "Norwester", marginTop: 10}}>Website design by <a href="https://zzulanas.com" style={{textDecoration: 'none', color: 'white'}}>Zachary Zulanas</a></p>
       </div>
       </ThemeProvider>
     </>
