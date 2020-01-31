@@ -46,6 +46,17 @@ const Layout = ({ children }) => {
           </Flex>
           <main>{children}</main>
         </div>
+      <div style={{
+          position: 'fixed',
+          left: 0,
+          bottom: 0,
+          width: '100%',
+          backgroundColor: 'black',
+          color: 'white',
+          textAlign: 'center'
+        }}>
+        <p>Website design by <a href="https://zzulanas.com">Zachary Zulanas</a></p>
+      </div>
       </ThemeProvider>
     </>
   )
