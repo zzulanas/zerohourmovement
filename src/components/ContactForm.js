@@ -50,7 +50,8 @@ class ContactForm extends React.Component {
               '&:hover': {
                 backgroundColor: '#FE3E00',
               },
-              cursor: 'pointer'
+              cursor: 'pointer',
+              margin: 20
             }} type="submit" value="Subscribe to Newsletter" className="special" />
       </form>
             );
