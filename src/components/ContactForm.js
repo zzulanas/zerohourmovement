@@ -25,7 +25,8 @@ class ContactForm extends React.Component {
 
   render() {
     return (
-      <form style={{ fontFamily: 'Norwester', margin: 15 }} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form style={{ fontFamily: 'Norwester', margin: 15 }} name="newsletter" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter" />
         <span class={"input input--nao "+ ((this.state.name == "") ? 'input--filled' : '')}>
           <input class="input__field input__field--nao" type="text" id="input-1" onChange={this.handleChange}/>
             <label class="input__label input__label--nao" for="input-1">
